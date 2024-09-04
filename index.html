@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="pt">
+  <!-- Informações de cabeçário e configurações básicas -->
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Trabalho de fundamentos de programação web</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css"
+    />
+    <link rel="stylesheet" href="./styles/globals.css" />
+    <link rel="stylesheet" href="./styles/utils.css" />
+    <link rel="stylesheet" href="./styles/sectionSobre.css" />
+    <link rel="stylesheet" href="./styles/sectionFormacao.css" />
+    <link rel="stylesheet" href="./styles/sectionPortfolio.css" />
+    <link rel="stylesheet" href="./styles/sectionContato.css" />
+  </head>
+  <body>
+    <div id="navContainer">
+      <nav>
+        <ul>
+          <li><a class="navLink" href="#sobre">Sobre</a></li>
+          <li><a class="navLink" href="#formacao">Formação</a></li>
+          <li><a class="navLink" href="#portfolio">Portfólio</a></li>
+          <li><a class="navLink" href="#contato">Contato</a></li>
+        </ul>
+      </nav>
+    </div>
+    <header id="header-medium-screens">
+      <div id="menuTrigger"><span></span><span></span><span></span></div>
+    </header>
+    <header id="header-large-screens">
+      <nav>
+        <ul>
+          <li><a href="#sobre">Sobre</a></li>
+          <li><a href="#formacao">Formação</a></li>
+          <li><a href="#portfolio">Portfólio</a></li>
+          <li><a href="#contato">Contato</a></li>
+        </ul>
+      </nav>
+    </header>
+    <main>
+      <!-- Área destinada à área sobre mim -->
+      <section id="sobre">
+        <!-- <img
+          id="profile-pic"
+          src="./public/profile.jpg"
+        /> -->
+        <h2 class="title">Sobre mim!</h2>
+        <p class="section-description">
+          Me chamo Matheus, tenho 29 anos de idade e sou natural de Nova Mutum-MT. Meus hobbies incluem ler livros, jogar futebol e jogos. 
+          <br>Atualmente trabalho como gestor de projetos, porém sempre me interessei por programação e toda a parte por trás das coisas funcionarem, principamente na área de tecnologia. 
+          <br> Estou cursando análise e desenvolvimento de sistemas, à princípio, apenas por interesse pessoal, não buscando um retorno imediato na minha carreira.
+        </p>
+      </section>
+      <!-- Área desitnada à área de formação -->
+      <hr class="section-divider" />
+      <section id="formacao">
+        <h2 class="title">Minha formação</h2>
+        <p class="section-description">
+        Algumas de minhas qualificações
+        </p>
+        <ul id="itens-formacao">
+          <li>
+            <strong class="instituicao"> Estadual José Aparecido Ribeiro/CEJA Paulo Freire -</strong> Ensino Médio Completo
+          </li>
+          <li>
+            <strong class="instituicao">Uninter -</strong> Técnico em Análise e Desenvolvimento de Sistemas - 2024/presente
+          </li>
+          <li>
+            <strong class="instituicao">Microsoft Office -</strong> Nível Avançado - Udemy
+          </li>
+          <li>
+            <strong class="instituicao">Microsoft Project -</strong> Básico ao Avançado - Udemy
+          </li>
+          <li>
+            <strong class="instituicao">Linguagens:</strong> 
+            <br><br> Inglês - Fluente(Autodidata)
+            <br>Alemão - Intermediário(Wizard Idiomas 2015-2016)
+            <br>Polonês - Intermediário(Autodidata)            
+          </li>
+        </ul>
+      </section>
+      <!-- Área destinada ao portfólio -->
+      <hr class="section-divider" />
+      <section id="portfolio">
+        <h2 class="title">Meu Portfólio</h2>
+        <p class="section-description">
+          Essa é a área onde estaria atualizando e incluindo projetos de minha autoria nessa minha jornada de programador. Atualmente não tenho nenhum desenvolvido, mas chegaremos lá!<span> <br><br>Clique abaixo para acessar meu repositório!</span>
+        </p>
+        <button id="acessar-github">
+          <i class="fab fa-github"></i> Meu Github
+        </button>
+      </section>
+      <!-- Área de contato -->
+      <hr class="section-divider" />
+      <section id="contato">
+        <h2 class="title">Contato</h2>
+        <p class="section-description">
+          Favor preencher campos abaixo:
+        </p>
+        <form action="#" method="post">
+          <div class="form-group">
+            <label for="name">Nome:</label>
+            <input type="text" id="name" name="name" required />
+          </div>
+          <div class="form-group">
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" required />
+          </div>
+          <div class="form-group">
+            <label for="message">Mensagem:</label>
+            <textarea id="message" name="message" required></textarea>
+          </div>
+          <div class="form-group">
+            <button id="enviar-formulario" type="submit">
+              <i class="fas fa-envelope"></i> Enviar mensagem
+            </button>
+          </div>
+        </form>
+      </section>
+    </main>
+    <script src="/logic/index.js"></script>
+  </body>
+</html>
